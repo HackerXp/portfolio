@@ -6,31 +6,27 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    num: "01",
     title: "Web Developement",
     description:
       "Web development involves creating websites and web applications, focusing on both the client-side (front-end) and server-side (back-end). Front-end development uses HTML, CSS, and JavaScript to design and implement user interfaces, while back-end development involves server-side languages, databases, and APIs to handle data and business logic. Full-stack development encompasses both areas, providing end-to-end solutions.",
     href: "",
   },
   {
-    num: "02",
     title: "Database",
     description:
-      "Web development involves creating websites and web applications, focusing on both the client-side (front-end) and server-side (back-end). Front-end development uses HTML, CSS, and JavaScript to design and implement user interfaces, while back-end development involves server-side languages, databases, and APIs to handle data and business logic. Full-stack development encompasses both areas, providing end-to-end solutions.",
+      "I offer comprehensive database design services, from initial modeling to ongoing administration. My work includes creating efficient and scalable data models, optimizing performance to ensure fast and reliable access to information, and maintaining data integrity. With a focus on efficiency and security, I ensure that you and your organization can operate with a robust and dependable database.",
     href: "",
   },
-  {
-    num: "03",
+  /*   {
     title: "UI/UX",
     description:
       "Web development involves creating websites and web applications, focusing on both the client-side (front-end) and server-side (back-end). Front-end development uses HTML, CSS, and JavaScript to design and implement user interfaces, while back-end development involves server-side languages, databases, and APIs to handle data and business logic. Full-stack development encompasses both areas, providing end-to-end solutions.",
     href: "",
-  },
+  }, */
   {
-    num: "04",
     title: "Copyrighter",
     description:
-      "Web development involves creating websites and web applications, focusing on both the client-side (front-end) and server-side (back-end). Front-end development uses HTML, CSS, and JavaScript to design and implement user interfaces, while back-end development involves server-side languages, databases, and APIs to handle data and business logic. Full-stack development encompasses both areas, providing end-to-end solutions.",
+      "I offer the creation of persuasive and engaging texts to promote products, services, and brands. I develop strategic content for ads, sales pages, email marketing, and social media, always aligned with your target audience and campaign objectives. I also optimize the text for SEO, collaborate with designers, and adjust the content as needed to maximize effectiveness and return on investment.",
     href: "",
   },
 ];
@@ -55,7 +51,7 @@ const Services = () => {
                 {/* top */}
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                    {service.num}
+                    {index + 1 < 9 ? `0${index + 1}` : index + 1}
                   </div>
                   <Link
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent 
@@ -70,7 +66,9 @@ const Services = () => {
                   {service.title}
                 </h2>
                 {/* description */}
-                <p className="text-white/60 text-justify">{service.description}</p>
+                <p className="text-white/60 text-justify">
+                  {service.description}
+                </p>
                 {/* description */}
                 <div className="border-b border-white/20 w-full"></div>
               </div>

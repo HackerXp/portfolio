@@ -72,7 +72,8 @@ and knowledge in exciting projects.`,
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "My experience",
+  description:
+    "Solid experience as a Front-End Developer, Full Stack Developer and Teacher, I have developed a wide range of technical and pedagogical skills. My background has enabled me to master the creation of interactive and responsive interfaces, as well as build comprehensive solutions that cover both front-end and back-end development.",
   items: [
     {
       company: "Okayulatech, Luanda",
@@ -101,7 +102,8 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "My experience",
+  description:
+    "I constantly seek knowledge from various sources to provide excellent service and stay updated with the continuous advancements in the world of information technology. My commitment to ongoing learning allows me to quickly adapt to new trends and technologies, ensuring that I can deliver innovative and effective solutions and contribute significantly to the success of the projects I am involved in.",
   items: [
     {
       institution: "Rockeseat",
@@ -129,7 +131,8 @@ const education = {
 //skills data
 const skills = {
   title: "My skills",
-  description: "My skills",
+  description:
+    "With a broad range of skills in various programming languages and technologies, I have the ability to tackle and solve complex development challenges efficiently. My experience spans from creating interactive and responsive interfaces to implementing comprehensive front-end and back-end solutions.",
   skillList: [
     { icon: <FaHtml5 />, name: "html 5" },
     { icon: <FaCss3 />, name: "css 3" },
@@ -171,7 +174,7 @@ const Resume = () => {
             <TabsContent value="experience">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-justify text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[900px] text-justify text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -204,7 +207,7 @@ const Resume = () => {
             <TabsContent value="education">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-justify text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[900px] text-justify text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -238,7 +241,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                  <p className="max-w-[900px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {skills.description}
                   </p>
                 </div>

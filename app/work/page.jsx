@@ -58,11 +58,43 @@ const projects = [
   {
     num: "04",
     category: "mobile",
-    title: "Project 4",
+    title: "E-rápido",
     description:
       "E-rápido is a mobile application developed in React Native, designed to function as a digital wallet with the goal of connecting people interested in lending money to each other. Through the platform, users can initiate loan negotiations, but to start the process, participants must have each other's phone contact. The application facilitates the management and security of transactions, offering an intuitive interface to connect lenders and borrowers, ensuring efficient and secure communication.",
     stack: [{ name: "React native" }, { name: "Adonis js" }, { name: "MySQL" }],
     image: "/assets/work/work-mobile-1.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Portfolio",
+    description:
+      "A portfolio is an organized collection of work and projects that showcases a professional’s skills, experience, and achievements. In a portfolio, you can include examples of previous projects, case studies, descriptions of completed work, and any other materials that illustrate your competencies and expertise in your field.",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind CSS" },
+      { name: "Framer Motion" },
+    ],
+    image: "/assets/work/cover-linkedin.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "fullstack",
+    title: "Information Management System",
+    description:
+      "An Information Management System (IMS) is a solution designed to collect, store, manage, and disseminate information within an organization. Its goal is to facilitate efficient access to information, support decision-making, and improve operational efficiency.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "Javascript" },
+      { name: "codeigniter" },
+      { name: "mysql" },
+    ],
+    image: "/assets/work/sgi.png",
     live: "",
     github: "",
   },
